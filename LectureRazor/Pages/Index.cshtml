@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1>@ViewData["Message"]</h1>
+    <form method="get">
+        Name: <input type="text" name="name" /><br />
+        Last name: <input type="text" name="lname" /><br />
+        Email: <input type="email" name="email" /><br />
+        Password: <input type="password" name="pwd" /><br />
+        <input type="submit" value="Register" />
+    </form>
+    <form method="post" asp-page-handler="login">
+        Email: <input type="email" name="emaill" /><br />
+        Password: <input type="password" name="pwdl" /><br />
+        <input type="submit" value="Login" />
+    </form>
+    <a href="/Human/Bobby/John">Human link</a>
+</div>
+
